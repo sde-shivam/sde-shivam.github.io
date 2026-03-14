@@ -1,0 +1,925 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: -webkit-linear-gradient(225deg,rgb(38, 17, 81) 0%, rgb(12, 3, 14) 100%);
+    color: white;
+}
+
+/* Desktop Navbar */
+nav {
+  position: fixed;
+  width: 94.9%;
+  z-index: 1000;
+  display: flex;
+  justify-content:space-between;
+  padding: 0.5rem 2rem;
+  background: #090917;
+  font-weight: bolder;
+}
+
+nav .container {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 18px;
+}
+
+.desk:hover {
+  color: #854CE6;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.github-btn {
+  font-weight: bold;
+  background: #090917;
+  color: #854CE6;
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.2rem;
+  height: 2.6rem;
+  border: 1px solid #854CE6;
+  border-radius: 50px;
+  box-shadow: 2px 3px 4px #854CE6;
+}
+
+.github-btn:hover {
+  background-color: #854CE6;
+  color: aliceblue;
+  transition: all 0.7s ease-in-out;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: #854CE6;
+}
+
+.menu-toggle i {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.menu-toggle:hover i {
+  transform: scale(1.2);
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+/* About section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem;
+  padding-top: 2rem;
+  
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-img img {
+  height: 396px;
+  width: 391px;
+  border-radius: 50%;
+  border: 3px solid #854CE6;
+  margin-right: 27px;
+  margin-top: 35px;
+  box-shadow: 5px 5px 30px white;
+}
+
+.resume-btn {
+  width: 18rem;
+  height: 1.8rem;
+  text-align: center;
+  font-size:larger;
+  font-weight:500;
+  margin-top: 1rem;
+  display: inline-block;
+  background:-webkit-linear-gradient(225deg,rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
+  color: white;
+  padding:16px 0;
+  border-radius:50px;
+  text-decoration: none;
+}
+
+.resume-btn:hover {
+  scale:1.1;
+  transition: all 0.4s ease-in-out;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 12rem;
+  line-height: 4rem;
+  margin-bottom: 10px;
+  font-family: poppins, sans-serif;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 48px;
+  margin-bottom: 16px;
+  font-family: poppins, sans-serif;
+}
+
+p {
+  color: #F2F3F495;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 100;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight:bold;
+  color: #ffffff;
+  margin-top:14px ;
+}
+
+.angle-bracket {
+  color: #854CE6;
+  font-size:1.5rem; 
+}
+
+.animate {
+  color:#854CE6;
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: spreadIn 2s ease-out forwards infinite;
+}
+
+@keyframes spreadIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+img:hover {
+  scale:1.02;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Skill section */
+.skills-section {
+  padding: 40px 20px;
+  background: -webkit-linear-gradient(225deg,rgb(38, 17, 81) 0%, rgb(12, 3, 14) 100%);
+  color: #bbb;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.skills-section p {
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.skills-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.skills-category {
+  background: linear-gradient(to right, #854ce6, #6f3bb8, #5a2f9a, #45247c, #30195e);
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.skills-category:hover {
+  scale:1.05;
+  transition: all 0.5s ease-in-out;
+}
+
+.skills-category h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color:#ffffff
+  
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skills-list span {
+  box-shadow: 3px 3px 8px black;
+  background: #2c2c2c;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #444;
+}
+
+/* Projects */
+#projects {
+  padding: 2.8rem;
+  background: -webkit-linear-gradient(225deg,rgb(38, 17, 81) 0%, rgb(12, 3, 14) 100%);
+  color: white;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: linear-gradient(to right, #45247c, #30195e);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tags {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #58a6ff;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 2.65rem;
+}
+
+.pro-p {
+  color: #bbb;
+}
+
+.project-card p {
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: normal;
+}
+
+/* Education */
+.education-section {
+  background: -webkit-linear-gradient(225deg,rgb(38, 17, 81) 0%, rgb(12, 3, 14) 100%);
+  margin: auto;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.section-subtitle {
+  color:azure;
+  margin-bottom: 2em;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-card {
+   background: linear-gradient(to left, #854ce6, #6f3bb8, #5a2f9a, #45247c, #30195e);
+  border-radius: 16px;
+  box-shadow: 2px 2px 5px black;
+  padding: 24px 32px;
+  min-width: 360px;
+  max-width: 420px;
+}
+.mern-card{
+  height: 130px;
+  width: 500px;
+}
+
+.timeline-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.college-logo {
+  width: 85px;
+  height: 65px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+}
+.tcsc-logo{
+  width: 65px;
+  height: 64px;
+}
+.apna-logo{
+  width: 65px;
+  height: 61px; 
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.card-header span {
+  display: block;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+.duration {
+  color: #f0a500;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.card-body {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.card-body strong {
+  color: #f0a500;
+}
+
+.timeline-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 32px;
+}
+
+/* Achievements */
+.achievement-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+#achievements h2 {
+  text-align: center;
+  padding: 5.2rem 0 2.7rem 0;
+}
+
+.achievement-card {
+  background: linear-gradient(to right, #45247c, #30195e);
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px black;
+  padding: 20px;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:#854CE6 ;
+}
+
+.achievement-description {
+  font-size: 1.3rem;
+  color:white;
+  
+}
+
+/* Certifications */
+#certifications {
+  background: -webkit-linear-gradient(225deg,rgb(38, 17, 81) 0%, rgb(12, 3, 14) 100%);
+  padding-bottom: 2rem;
+}
+
+.section-title {
+  margin-top: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom:1rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.section-subtitle {
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.certifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content:space-evenly;
+}
+
+.cert-card {
+   background: linear-gradient(to left, #45247c, #30195e);
+  border-radius: 16px;
+  box-shadow: 2px 2px 5px black;
+  width: 320px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.cert-img {
+  width: 100%;
+  max-width: 120px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.cert-content {
+  width: 100%;
+  text-align: left;
+}
+
+.cert-tech {
+  color: #1e90ff;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.cert-title {
+  color: #854CE6;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.cert-title:hover {
+  text-decoration: underline;
+}
+
+.cert-desc {
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Contact */
+.contact-section {
+  padding: 6rem 0;
+  background: -webkit-linear-gradient(225deg,rgb(38, 17, 81) 0%, rgb(12, 3, 14) 100%);
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  resize: none;
+  box-shadow: 2px 2px 5px black;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  scale: 1.01;
+  transition: all 0.4s ease-in-out;
+}
+
+.submit {
+  width:10rem;
+  height: 2rem;
+  background-color: #854CE6;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin:auto;
+  border-radius: 1rem;
+}
+
+.submit:hover {
+  scale:1.04;
+  transition: all 0.2s ease-in-out;
+}
+
+#responseMessage {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: #090917;
+  color: #fff;
+  text-align: center;
+  padding: 32px 0 16px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.footer-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color:#854CE6;
+}
+
+.footer-social {
+  margin-bottom: 18px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.footer-social a:hover {
+  transform: scale(1.15);
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+}
+
+.footer-nav {
+  margin-bottom: 18px;
+}
+
+.footer-copy {
+  font-size: 0.95rem;
+  color: red;
+  margin-top: 12px;
+}
+
+/* Navbar Layout */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #090917;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  height: 60px;
+}
+
+.navbar-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  justify-self: start;
+  margin-top: 0;
+}
+
+.angle-bracket {
+  color: #854CE6;
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+}
+
+.github-btn {
+  font-weight: bold;
+  background: #090917;
+  color: #854CE6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.2rem;
+  height: 2.6rem;
+  border: 1px solid #854CE6;
+  border-radius: 50px;
+  box-shadow: 2px 3px 4px #854CE6;
+  margin: 0 auto;
+  grid-column: 2;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 18px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: static;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.desk:hover {
+  color: #854CE6;
+}
+
+
+/* ============================= */
+/* 1. Hero / About Section Animation */
+/* ============================= */
+.hero-content {
+  opacity: 0;
+  transform: translateY(60px); /* Slide up */
+  transition: all 0.9s ease;
+}
+.hero-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-img {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 1s ease;
+}
+.hero-img.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hero Image Orbit Animation */
+.hero-img {
+  position: relative;
+  display: inline-block;
+}
+.hero-img img {
+  height: 396px;
+  width: 391px;
+  border-radius: 50%;
+  border: 3px solid #854CE6;
+  margin-right: 27px;
+  margin-top: 35px;
+  box-shadow: 0 0 20px rgba(132, 76, 230, 0.6);
+  position: relative;
+  z-index: 1;
+}
+.hero-img::after,
+.hero-img::before {
+  content: "";
+  position: absolute;
+  top: 232px;
+  left: 196px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.hero-img::after {
+  background: #E600FF;
+  box-shadow: 0 0 15px #E600FF;
+  transform: translate(-50%, -50%) translateX(220px);
+  animation: orbitCW 3s linear infinite;
+}
+.hero-img::before {
+  background: #854CE6;
+  box-shadow: 0 0 15px #854CE6;
+  transform: translate(-50%, -50%) translateX(220px);
+  animation: orbitCCW 3s linear infinite;
+}
+@keyframes orbitCW {
+  from { transform: rotate(0deg) translateX(220px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(220px) rotate(-360deg); }
+}
+@keyframes orbitCCW {
+  from { transform: rotate(360deg) translateX(220px) rotate(-360deg); }
+  to   { transform: rotate(0deg) translateX(220px) rotate(0deg); }
+}
+
+
+/* ============================= */
+/* 2. Skills Section Animation */
+/* ============================= */
+.skills-category {
+  opacity: 0;
+  transform: translateX(100px); /* Default: from right */
+  transition: all 0.8s ease;
+}
+.skills-category:nth-child(even) {
+  transform: translateX(-100px); /* Even items from left */
+}
+.skills-category.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* ============================= */
+/* 3. Education Section Animation */
+/* ============================= */
+.timeline-card {
+  background: linear-gradient(to left, #854ce6, #6f3bb8, #5a2f9a, #45247c, #30195e);
+  border-radius: 16px;
+  box-shadow: 2px 2px 5px black;
+  padding: 24px 32px;
+  min-width: 360px;
+  max-width: 420px;
+  opacity: 0;
+  transform: translateX(100px);   /* Start from right */
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+.timeline-card.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.timeline-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 20px rgba(240, 165, 0, 0.4);
+}
+/* Overlay container */
+.education-section { position: relative; }
+.edu-tl-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; /* JS sets exact X */
+  width: 0;
+  pointer-events: none;
+  z-index: 0; /* behind cards */
+}
+/* Growing vertical line */
+.edu-tl-line {
+  position: absolute;
+  left: -200px;
+  top: 0; /* JS sets start Y */
+  width: 4px;
+  height: 0;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #854CE6, #30195e);
+  transition: height 0.3s cubic-bezier(.22,1,.36,1);
+}
+/* Timeline dots */
+.edu-tl-dot {
+  position: absolute;
+  left: -225px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #854CE6;
+  background: transparent;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity .2s ease, transform .35s ease;
+  box-shadow: 0 0 0 rgba(133,76,230,0);
+}
+.edu-tl-dot.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* ============================= */
+/* 4. Projects Section Animation */
+/* ============================= */
+.project-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+.project-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ============================= */
+/* 5. Achievements Section Animation */
+/* ============================= */
+.achievement-card {
+  opacity: 0;
+  transform: translateX(-80px); /* From left */
+  transition: all 0.8s ease;
+}
+.achievement-card:nth-child(even) {
+  transform: translateX(80px); /* Alternate from right */
+}
+.achievement-card.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* ============================= */
+/* 6. Certifications Section Animation */
+/* ============================= */
+.cert-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.2s ease; /* Smooth */
+}
+.cert-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
