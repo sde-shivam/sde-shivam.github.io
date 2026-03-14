@@ -1,31 +1,17 @@
-
+emailjs.init("j2V8uVV-xfBjX58dh");
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();  
 
-    function sendMail() {
-        let params = {  
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            message: document.getElementById("message").value,
-        };
-
-        emailjs.send("service_dg253bh", "template_wok4xav", params)
-            .then(() => {
-                alert("Message sent successfully!");
-            })
-            .catch((error) => {
-                alert("Failed to send message. Please try again.");
-                console.error("Error:", error);
-            });
-    }
-             
-    sendMail();
-    
-             document.getElementById("name").value = "";
-             document.getElementById("email").value = "";
-             document.getElementById("message").value = "";
-
-  });
+    emailjs.sendForm("service_dg253bh", "template_wok4xav", this)
+        .then(() => {
+            alert("Message sent successfully!");
+            this.reset(); 
+        })
+        .catch((error) => {
+            alert("Failed to send message. Check console.");
+            console.error("EmailJS error:", error);
+        });
+});
 
   // Skills section Animation
  document.addEventListener("DOMContentLoaded", () => {
