@@ -921,5 +921,14 @@ nav a {
   transform: translateY(0);
 }
 
+/* portfolio to open only on desktop/laptop and block mobile. */
+@media (max-width: 900px){
+  body > *:not(#mobile-block){
+    display:none;
+  }
+  #mobile-block{
+    display:block;
+  }
+}
 
 
